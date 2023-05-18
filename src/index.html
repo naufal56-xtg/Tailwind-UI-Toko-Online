@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <!-- //! Top Navbar -->
+    <div class="bg-primary1 w-full p-2">
+      <div class="container mx-auto flex md:justify-between justify-center">
+        <p class="text-white hidden md:flex">
+          <img src="assets/images/call.svg" alt="" class="md:mr-2" /> 0834 2786
+          3761
+        </p>
+        <p class="text-white">Dapatkan Promo Buy 1 Get 1</p>
+        <p class="text-white hidden md:flex">
+          <img src="assets/images/location.svg" alt="" class="mr-2" />
+          Bekasi, Indonesia
+        </p>
+      </div>
+    </div>
+    <!-- //? End Top Navbar -->
+
+    <!-- //! Navbar -->
+    <nav
+      class="bg-white dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img src="assets/logo.svg" class="h-6 mr-3 sm:h-9" alt="Logo Toko" />
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            class="text-primary1 border border-primary1 hover:bg-primary1 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-400 font-medium rounded-lg text-sm px-4 py-2 text-center mr-2 dark:bg-green-700 dark:hover:bg-primary1 dark:focus:ring-green-900"
+          >
+            Login
+          </button>
+          <button
+            type="button"
+            class="text-white bg-primary1 hover:bg-white hover:text-primary1 hover:border border-primary1 focus:ring-4 focus:outline-none focus:ring-green-400 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green-700 dark:hover:bg-primary1 dark:focus:ring-green-900"
+          >
+            Register
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="font-bold block py-2 pl-3 pr-4 text-white bg-primary1 rounded md:bg-transparent md:text-primary1 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="font-bold flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary1 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                Kategori
+                <svg
+                  class="w-5 h-5 ml-1"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >T-Shirt</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Shoes</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Jeans</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary1 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Promo</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- //? End Navbar -->
+
+    <!-- //! Hero -->
+    <div class="bg-primary2 w-full h-1/2 p-2">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center"
+      >
+        <div class="flex md:justify-center md:order-2">
+          <img
+            src="assets/images/hero.png"
+            alt=""
+            class="md:h-96 h-64 md:-mb-2 mb-4"
+          />
+        </div>
+
+        <div class="md:pl-0 pl-1">
+          <p class="font-light text-xl md:mb-5 mb-2">Diskon 30% Hari Ini</p>
+          <p class="text-primary1 text-3xl md:text-6xl font-bold md:mb-5 mb-3">
+            Promo 2023 <br />
+            Jacket Collection
+          </p>
+
+          <button
+            type="button"
+            class="text-gray-900 md:mt-5 mt-3 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- //? End Hero -->
+
+    <!-- //! Kategori -->
+    <div class="container mx-auto md:mt-10 mt-3">
+      <h1 class="font-bold md:text-4xl text-xl md:text-left text-center">
+        Kategori
+      </h1>
+    </div>
+    <div
+      class="container md:my-8 my-3 mx-auto grid grid-cols-1 md:grid-cols-3 gap-3"
+    >
+      <div class="bg-primary2 p-5 rounded-md flex justify-between relative">
+        <div class="md:order-2 absolute bottom-3 right-1">
+          <img src="assets/images/category1.png" alt="" class="bg-cover" />
+        </div>
+
+        <div class="">
+          <p class="font-light text-xl text-white">Diskon 10%</p>
+          <p class="font-bold text-3xl md:mt-1 text-white">T-Shirt</p>
+
+          <button
+            type="button"
+            class="text-primary2 md:mt-5 mt-3 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-primary3 p-5 rounded-md flex justify-between relative">
+        <div class="md:order-2 absolute bottom-3 right-1">
+          <img src="assets/images/category2.png" alt="" class="bg-cover" />
+        </div>
+
+        <div class="">
+          <p class="font-light text-xl text-black">Diskon 10%</p>
+          <p class="font-bold text-3xl md:mt-1 text-black">Shoes</p>
+
+          <button
+            type="button"
+            class="text-white md:mt-5 mt-3 bg-black border border-gray-300 focus:outline-none hover:bg-black focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-primary1 p-5 rounded-md flex justify-between relative">
+        <div class="md:order-2 absolute bottom-3 right-1">
+          <img src="assets/images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div class="">
+          <p class="font-light text-xl text-white">Diskon 10%</p>
+          <p class="font-bold text-3xl md:mt-1 text-white">Jeans</p>
+
+          <button
+            type="button"
+            class="text-primary1 md:mt-5 mt-3 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- //? End Kategori -->
+
+    <!-- //! Top Product -->
+    <div class="container mx-auto mt-10">
+      <h1 class="font-bold md:text-4xl text-xl md:text-left text-center">
+        Top Product
+      </h1>
+    </div>
+
+    <div
+      class="container md:my-8 my-3 mx-auto grid grid-cols-2 md:grid-cols-4 md:gap-4 gap-2 gap-y-3"
+    >
+      <div
+        class="bg-white border-4 border-spacing-1 border-borderColor p-2 rounded-2xl pb-4"
+      >
+        <div
+          class="container bg-bgColor rounded-2xl p-4 flex md:justify-center md:items-center"
+        >
+          <img src="assets//images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div>
+          <p class="font-base text-sm text-borderColor">Jeans</p>
+          <p class="font-thin md:text-lg text-sm text-black">JEANS WANITA 32</p>
+          <p class="font-bold md:text-md text-sm text-black md:mt-3 mt-2">
+            Rp. 300.000
+          </p>
+
+          <div class="flex">
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star-hide.svg" alt="" class="w-4" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-4 border-spacing-1 border-borderColor p-2 rounded-2xl pb-4"
+      >
+        <div
+          class="container bg-bgColor rounded-2xl p-4 flex md:justify-center md:items-center"
+        >
+          <img src="assets//images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div>
+          <p class="font-base text-sm text-borderColor">Jeans</p>
+          <p class="font-thin md:text-lg text-sm text-black">JEANS WANITA 32</p>
+          <p class="font-bold md:text-md text-sm text-black md:mt-3 mt-2">
+            Rp. 300.000
+          </p>
+
+          <div class="flex">
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star-hide.svg" alt="" class="w-4" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-4 border-spacing-1 border-borderColor p-2 rounded-2xl pb-4"
+      >
+        <div
+          class="container bg-bgColor rounded-2xl p-4 flex md:justify-center md:items-center"
+        >
+          <img src="assets//images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div>
+          <p class="font-base text-sm text-borderColor">Jeans</p>
+          <p class="font-thin md:text-lg text-sm text-black">JEANS WANITA 32</p>
+          <p class="font-bold md:text-md text-sm text-black md:mt-3 mt-2">
+            Rp. 300.000
+          </p>
+
+          <div class="flex">
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star-hide.svg" alt="" class="w-4" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-4 border-spacing-1 border-borderColor p-2 rounded-2xl pb-4"
+      >
+        <div
+          class="container bg-bgColor rounded-2xl p-4 flex md:justify-center md:items-center"
+        >
+          <img src="assets//images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div>
+          <p class="font-base text-sm text-borderColor">Jeans</p>
+          <p class="font-thin md:text-lg text-sm text-black">JEANS WANITA 32</p>
+          <p class="font-bold md:text-md text-sm text-black md:mt-3 mt-2">
+            Rp. 300.000
+          </p>
+
+          <div class="flex">
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star-hide.svg" alt="" class="w-4" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-4 border-spacing-1 border-borderColor p-2 rounded-2xl pb-4"
+      >
+        <div
+          class="container bg-bgColor rounded-2xl p-4 flex md:justify-center md:items-center"
+        >
+          <img src="assets//images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div>
+          <p class="font-base text-sm text-borderColor">Jeans</p>
+          <p class="font-thin md:text-lg text-sm text-black">JEANS WANITA 32</p>
+          <p class="font-bold md:text-md text-sm text-black md:mt-3 mt-2">
+            Rp. 300.000
+          </p>
+
+          <div class="flex">
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star-hide.svg" alt="" class="w-4" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-4 border-spacing-1 border-borderColor p-2 rounded-2xl pb-4"
+      >
+        <div
+          class="container bg-bgColor rounded-2xl p-4 flex md:justify-center md:items-center"
+        >
+          <img src="assets//images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div>
+          <p class="font-base text-sm text-borderColor">Jeans</p>
+          <p class="font-thin md:text-lg text-sm text-black">JEANS WANITA 32</p>
+          <p class="font-bold md:text-md text-sm text-black md:mt-3 mt-2">
+            Rp. 300.000
+          </p>
+
+          <div class="flex">
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star-hide.svg" alt="" class="w-4" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-4 border-spacing-1 border-borderColor p-2 rounded-2xl pb-4"
+      >
+        <div
+          class="container bg-bgColor rounded-2xl p-4 flex md:justify-center md:items-center"
+        >
+          <img src="assets//images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div>
+          <p class="font-base text-sm text-borderColor">Jeans</p>
+          <p class="font-thin md:text-lg text-sm text-black">JEANS WANITA 32</p>
+          <p class="font-bold md:text-md text-sm text-black md:mt-3 mt-2">
+            Rp. 300.000
+          </p>
+
+          <div class="flex">
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star-hide.svg" alt="" class="w-4" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-4 border-spacing-1 border-borderColor p-2 rounded-2xl pb-4"
+      >
+        <div
+          class="container bg-bgColor rounded-2xl p-4 flex md:justify-center md:items-center"
+        >
+          <img src="assets//images/category3.png" alt="" class="bg-cover" />
+        </div>
+
+        <div>
+          <p class="font-base text-sm text-borderColor">Jeans</p>
+          <p class="font-thin md:text-lg text-sm text-black">JEANS WANITA 32</p>
+          <p class="font-bold md:text-md text-sm text-black md:mt-3 mt-2">
+            Rp. 300.000
+          </p>
+
+          <div class="flex">
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star.svg" alt="" class="w-4" />
+            <img src="assets/images/star-hide.svg" alt="" class="w-4" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //? End Top Product -->
+
+    <!-- //! Subscribe Form -->
+    <div class="bg-primary3 w-full h-1/2 p-12 my-10">
+      <div class="text-center">
+        <p class="font-bold md:text-2xl text-lg text-black mb-2">
+          Let's Keep In Touch
+        </p>
+        <p class="font-light md:text-md text-sm text-gray-500 mb-3">
+          Segera Isi Untuk Mendapatkan Diskon 15% Untuk Pemesanan Pertama
+        </p>
+      </div>
+
+      <div class="flex justify-center">
+        <input
+          type="email"
+          id="email"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:w-1/4 w-48 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="name@flowbite.com"
+          required
+        />
+
+        <span
+          class="inline-flex items-center rounded-r-lg bg-black md:px-3 px-1 md:text-md text-sm text-white border border-l-0 border-b-gray-300"
+          >Subscribe</span
+        >
+      </div>
+    </div>
+    <!-- //? End Subscribe Form -->
+
+    <!-- //! FAQ -->
+    <div class="container my-10 mx-auto md:p-12">
+      <p class="font-bold md:text-xl text-lg text-black text-center">
+        Frequently Asked Question (FAQ)
+      </p>
+
+      <div class="grid md:grid-cols-2 grid-cols-1 my-10 gap-5 gap-y-5">
+        <div id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-2 font-medium text-left bg-primary3 text-black border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-1"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-1"
+            >
+              <span>Bagaimana Caranya Memesan ?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-1"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-1"
+          >
+            <div
+              class="p-5 w-full border border-b-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Flowbite is first conceptualized and designed using the Figma
+                software so everything you see in the library has a design
+                equivalent in our Figma file.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400">
+                Check out the
+                <a
+                  href="https://flowbite.com/figma/"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >Figma design system</a
+                >
+                based on the utility classes from Tailwind CSS and components
+                from Flowbite.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-2 font-medium text-left bg-primary3 text-black border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-2"
+            >
+              <span>Berapa Ongkirnya ?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-2"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-2"
+          >
+            <div
+              class="p-5 w-full border border-b-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Flowbite is first conceptualized and designed using the Figma
+                software so everything you see in the library has a design
+                equivalent in our Figma file.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400">
+                Check out the
+                <a
+                  href="https://flowbite.com/figma/"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >Figma design system</a
+                >
+                based on the utility classes from Tailwind CSS and components
+                from Flowbite.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-2 font-medium text-left bg-primary3 text-black border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-3"
+            >
+              <span>Bagaimana Caranya Pengembalian Barang ?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-3"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-3"
+          >
+            <div
+              class="p-5 w-full border border-b-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Flowbite is first conceptualized and designed using the Figma
+                software so everything you see in the library has a design
+                equivalent in our Figma file.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400">
+                Check out the
+                <a
+                  href="https://flowbite.com/figma/"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >Figma design system</a
+                >
+                based on the utility classes from Tailwind CSS and components
+                from Flowbite.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-2 font-medium text-left bg-primary3 text-black border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-4"
+            >
+              <span>Bagaimana Cara Menggunakan Diskon ?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-4"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-4"
+          >
+            <div
+              class="p-5 w-full border border-b-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Flowbite is first conceptualized and designed using the Figma
+                software so everything you see in the library has a design
+                equivalent in our Figma file.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400">
+                Check out the
+                <a
+                  href="https://flowbite.com/figma/"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >Figma design system</a
+                >
+                based on the utility classes from Tailwind CSS and components
+                from Flowbite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //? End FAQ -->
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
